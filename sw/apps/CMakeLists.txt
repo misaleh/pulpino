@@ -23,6 +23,7 @@ macro(add_application NAME SOURCE_FILES)
     ${CMAKE_SOURCE_DIR}/libs/string_lib/inc
     ${CMAKE_SOURCE_DIR}/libs/sys_lib/inc
     ${CMAKE_SOURCE_DIR}/libs/bench_lib/inc
+    ${CMAKE_SOURCE_DIR}/libs/CMSIS_lib/inc
   )
 
   if(${ARDUINO_LIB})
@@ -74,7 +75,7 @@ macro(add_application NAME SOURCE_FILES)
 
   # link libraries
   target_link_libraries(${NAME}.elf ${ARG_LIBS} ${ARDUINO_SEP} ${ARDUINO_CORE} ${BEEBS_LIB_NAME} bench ${MATH_FNS_LIB} string sys m)
-
+  target_link_libraries(${NAME}.elf ${ARG_LIBS}  CMSIS_lib bench string sys m)
   # this specifies the testbench to use for simulation
   if(ARG_TB)
     set_target_properties(${NAME}.elf PROPERTIES TB ${ARG_TB})
@@ -193,7 +194,7 @@ endmacro()
 ################################################################################
 
 add_subdirectory(helloworld)
-
+add_subdirectory(CMSIS_tests)
 if(${ARDUINO_LIB})
   add_subdirectory(Arduino_tests)
 endif()

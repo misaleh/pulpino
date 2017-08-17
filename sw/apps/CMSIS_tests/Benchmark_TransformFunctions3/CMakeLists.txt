@@ -1,0 +1,2 @@
+add_application(Benchmark_TransformFunctions3 Benchmark_TransformFunctions3.c)
+

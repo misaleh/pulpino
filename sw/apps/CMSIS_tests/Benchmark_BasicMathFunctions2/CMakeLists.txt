@@ -1,0 +1,1 @@
+add_application(Benchmark_BasicMathFunctions2 Benchmark_BasicMathFunctions2.c  TB_TEST "CMSIS_TEST")

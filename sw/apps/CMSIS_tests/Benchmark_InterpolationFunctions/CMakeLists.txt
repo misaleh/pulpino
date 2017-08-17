@@ -1,0 +1,1 @@
+add_application(Benchmark_InterpolationFunctions Benchmark_InterpolationFunctions.c TB_TEST "CMSIS_TEST")

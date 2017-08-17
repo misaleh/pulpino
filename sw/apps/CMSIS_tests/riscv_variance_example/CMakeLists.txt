@@ -1,0 +1,1 @@
+add_application(riscv_variance_example_f32 riscv_variance_example_f32.c)

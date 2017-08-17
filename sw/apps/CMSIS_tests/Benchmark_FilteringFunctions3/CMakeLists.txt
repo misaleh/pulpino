@@ -1,0 +1,1 @@
+add_application(Benchmark_FilteringFunctions3 Benchmark_FilteringFunctions3.c TB_TEST "CMSIS_TEST")

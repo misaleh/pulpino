@@ -1,0 +1,1 @@
+add_application(Benchmark_ControllerFunctions Benchmark_ControllerFunctions.c TB_TEST "CMSIS_TEST")

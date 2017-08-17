@@ -1,0 +1,1 @@
+add_application(riscv_class_marks_example_f32 riscv_class_marks_example_f32.c)

@@ -101,7 +101,7 @@ set(VSIM "vsim" CACHE FILEPATH "Path to the vsim executable")
  endif()
 
  include_directories(libs/sys_lib/inc)
-
+ include_directories(libs/CMSIS_lib/inc)
  if(${ARDUINO_LIB})
   include_directories(libs/Arduino_lib/core_libs/inc)
   include_directories(libs/Arduino_lib/separate_libs/inc)
@@ -152,7 +152,7 @@ add_custom_target(vcompile.core.zero
 
 add_subdirectory(libs/string_lib)
 add_subdirectory(libs/sys_lib)
-
+add_subdirectory(libs/CMSIS_lib)
 if(${RISCY_RV32F})
  add_subdirectory(libs/math_fns_lib)
 endif()

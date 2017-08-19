@@ -80,7 +80,7 @@ Improvements of DSP extension(Imp) = (Old - New_DSP)*100/Old
 | arm_shift_q15 (left)     | 373 |  185(50.4%) | 236| 
 | arm_shift_q31 (left)      | 642|  N/A | 369| 
 | arm_shift_q7 (right)      | 143 | 62(56.6%) |246 | 
-| arm_shift_q15 (right)      | 141 |  140| 203| 
+| arm_shift_q15 (right)      | 141 |  91(35.5%)| 203| 
 | arm_shift_q31 (right)      | 145|  N/A |236 | 
 | arm_sub_f32      | 5350 | N/A |295 | 
 | arm_sub_q7      | 398 |  340(14.6%)| 109| 
@@ -364,7 +364,7 @@ Init functions are not considered in benchmarking as they are just copying a few
 
 #### Transform Functions
 
-For CFFT, transform size was 64.
+For CFFT, Transform size is 64.
 
 RFFT uses Transform of size 16.
 
